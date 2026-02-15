@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: distributed-inn-416814
+    schema: raw
+    tables:
+      - name: workday_employee
+        columns:
+          - name: employee_id
+            tests:
+              - not_null
+              - unique
