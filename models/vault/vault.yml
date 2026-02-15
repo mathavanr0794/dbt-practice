@@ -1,0 +1,20 @@
+models:
+  - name: hub_employee
+    columns:
+      - name: employee_hk
+        tests:
+          - not_null
+          - unique
+  - name: sat_employee_details
+    columns:
+      - name: employee_hk
+        tests:
+          - not_null
+      - name: load_dts
+        tests:
+        - not_null
+  - name: link_employee_manager
+    columns:
+      - name: employee_manager_hk
+        tests:
+          - not_null
